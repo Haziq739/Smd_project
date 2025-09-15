@@ -45,7 +45,7 @@ class Fourth_Activity : AppCompatActivity() {
             val password = passwordInput?.text.toString().trim()
 
             if (username.isNotEmpty() && password.isNotEmpty()) {
-                val intent = Intent(this, Fourth_Activity::class.java)
+                val intent = Intent(this, Fifth_Activity::class.java) // fixed
                 startActivity(intent)
                 finish()
             } else {
