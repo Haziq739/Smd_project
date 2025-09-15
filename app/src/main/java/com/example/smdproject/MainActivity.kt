@@ -25,6 +25,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Third_Activity::class.java)
             startActivity(intent)
             finish() // close MainActivity so user can’t go back
-        }, 5000) // 2000ms = 2 seconds
+        }, 2000) //
     }
 }
