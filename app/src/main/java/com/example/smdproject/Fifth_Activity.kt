@@ -26,6 +26,13 @@ class Fifth_Activity : AppCompatActivity() {
         val plusIcon = findViewById<ImageView>(R.id.reel_icon)  // using reel as your + button
         val heartIcon = findViewById<ImageView>(R.id.heart_icon_1)
         val profileIcon = findViewById<CircleImageView>(R.id.view_circle_7)
+        val yourStoryIcon = findViewById<CircleImageView>(R.id.view_circle_1) // Your Story
+        val camIcon = findViewById<ImageView>(R.id.cam_icon_2) // Top-left camera icon
+
+        // New story icons (friends' stories)
+        val storyIcon2 = findViewById<CircleImageView>(R.id.view_circle_2)
+        val storyIcon3 = findViewById<CircleImageView>(R.id.view_circle_3)
+        val storyIcon4 = findViewById<CircleImageView>(R.id.view_circle_4)
 
         // Navigate to Sixth_Activity on search icon click
         searchIcon.setOnClickListener {
@@ -48,6 +55,34 @@ class Fifth_Activity : AppCompatActivity() {
         // Navigate to Eleventh_Activity on profile icon click
         profileIcon.setOnClickListener {
             val intent = Intent(this@Fifth_Activity, Eleventh_Activity::class.java)
+            startActivity(intent)
+        }
+
+        // Navigate to Fourteen_Activity on "Your Story" profile picture click
+        yourStoryIcon.setOnClickListener {
+            val intent = Intent(this@Fifth_Activity, Fourteen_Activity::class.java)
+            startActivity(intent)
+        }
+
+        // Navigate to Fifteen_Activity on top-left camera icon click
+        camIcon.setOnClickListener {
+            val intent = Intent(this@Fifth_Activity, Fifteen_Activity::class.java)
+            startActivity(intent)
+        }
+
+        // Navigate to Sixteen_Activity on remaining three story icons
+        storyIcon2.setOnClickListener {
+            val intent = Intent(this@Fifth_Activity, Sixteen_Activity::class.java)
+            startActivity(intent)
+        }
+
+        storyIcon3.setOnClickListener {
+            val intent = Intent(this@Fifth_Activity, Sixteen_Activity::class.java)
+            startActivity(intent)
+        }
+
+        storyIcon4.setOnClickListener {
+            val intent = Intent(this@Fifth_Activity, Sixteen_Activity::class.java)
             startActivity(intent)
         }
     }
