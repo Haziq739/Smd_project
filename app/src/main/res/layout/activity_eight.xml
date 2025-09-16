@@ -136,6 +136,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/firstId_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/andrew_m"
@@ -199,6 +200,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/secondId_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/user_ellis"
@@ -257,6 +259,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/thirdId_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/user_jack"
@@ -320,6 +323,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/fourthId_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/user_william"
