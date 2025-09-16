@@ -1,11 +1,12 @@
 package com.example.smdproject
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
 class Seventh_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,6 +16,14 @@ class Seventh_Activity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        //
+        val chat = findViewById<LinearLayout>(R.id.nameChat)
+
+        // Navigate to Ninth_Activity when clicked
+        chat.setOnClickListener {
+            val intent = Intent(this, Nineth_Activity::class.java)
+            startActivity(intent)
         }
     }
 }

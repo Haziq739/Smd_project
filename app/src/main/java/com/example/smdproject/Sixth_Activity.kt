@@ -22,22 +22,21 @@ class Sixth_Activity : AppCompatActivity() {
             insets
         }
 
-        // Search input (from top search bar)
         val searchInput = findViewById<TextInputEditText>(R.id.search_input)
+        val searchLayout = findViewById<com.google.android.material.textfield.TextInputLayout>(R.id.search_layout)
 
-        // Search icon in bottom nav
-        val searchIcon = findViewById<ImageView>(R.id.search_icon_1)
-
-        searchIcon.setOnClickListener {
-            val query = searchInput?.text?.toString()?.trim()
+        searchLayout.setStartIconOnClickListener {
+            val query = searchInput.text?.toString()?.trim()
 
             if (!query.isNullOrEmpty()) {
                 val intent = Intent(this, Seventh_Activity::class.java)
-                intent.putExtra("SEARCH_QUERY", query) // pass query if needed
+                intent.putExtra("SEARCH_QUERY", query)
                 startActivity(intent)
             } else {
                 Toast.makeText(this, "Please enter something to search", Toast.LENGTH_SHORT).show()
             }
         }
+
+
     }
 }

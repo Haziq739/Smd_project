@@ -51,6 +51,14 @@
             android:textSize="23sp" />
 
         <ImageView
+            android:id="@+id/videoCallIcon"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/vidcall_icon"
+            app:tint="@color/light_pink" />
+
+        <ImageView
             android:id="@+id/recoderSection"
             android:layout_width="45dp"
             android:layout_height="45dp"

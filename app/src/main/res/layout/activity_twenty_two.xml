@@ -22,6 +22,7 @@
 
 
         <TextView
+            android:id="@+id/FollowingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Following"
@@ -36,6 +37,7 @@
 
 
         <TextView
+            android:id="@+id/YouBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
