@@ -20,13 +20,19 @@ class Nineth_Activity : AppCompatActivity() {
             insets
         }
 
-        // 🔹 Find video call icon
+        // 🔹 Video call icon → Go to Tenth_Activity
         val videoCallIcon = findViewById<ImageView>(R.id.videoCallIcon)
-
-        // 🔹 Set click listener
         videoCallIcon.setOnClickListener {
             val intent = Intent(this, Tenth_Activity::class.java)
             startActivity(intent)
+        }
+
+        // 🔹 Back button icon (top-left arrow) → Go to Seventh_Activity
+        val backButton = findViewById<ImageView>(R.id.middle_leftArrowSection)
+        backButton.setOnClickListener {
+            val intent = Intent(this, Seventh_Activity::class.java)
+            startActivity(intent)
+            finish() // optional: closes current activity
         }
     }
 }
