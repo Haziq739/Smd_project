@@ -28,6 +28,9 @@ class Fifth_Activity : AppCompatActivity() {
         val profileIcon = findViewById<CircleImageView>(R.id.view_circle_7)
         val yourStoryIcon = findViewById<CircleImageView>(R.id.view_circle_1) // Your Story
         val camIcon = findViewById<ImageView>(R.id.cam_icon_2) // Top-left camera icon
+        val vidIcon = findViewById<ImageView>(R.id.vid_icon)
+        val arrIcon = findViewById<ImageView>(R.id.arrow_icon)
+
 
         // New story icons (friends' stories)
         val storyIcon2 = findViewById<CircleImageView>(R.id.view_circle_2)
@@ -69,6 +72,19 @@ class Fifth_Activity : AppCompatActivity() {
             val intent = Intent(this@Fifth_Activity, Fifteen_Activity::class.java)
             startActivity(intent)
         }
+
+
+        vidIcon.setOnClickListener {
+            val intent = Intent(this@Fifth_Activity, Fifteen_Activity::class.java)
+            startActivity(intent)
+        }
+
+
+        arrIcon.setOnClickListener {
+            val intent = Intent(this@Fifth_Activity, Eight_Activity::class.java)
+            startActivity(intent)
+        }
+
 
         // Navigate to Sixteen_Activity on remaining three story icons
         storyIcon2.setOnClickListener {
